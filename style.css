@@ -1,0 +1,342 @@
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: "Marcellus", serif;
+}
+h1 {
+  font-size: 3.2rem;
+}
+p {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.bg-blue {
+  background: #2c4767;
+}
+.hero-section {
+  z-index: -1;
+}
+
+.header {
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  overflow: hidden;
+  background: url(img/hero.jpg);
+  background-size: cover;
+}
+.navbar {
+  z-index: 2;
+}
+.logo {
+  height: 14vh;
+}
+.nav-item {
+  font-size: 1.2rem;
+}
+.data {
+  position: absolute;
+  top: 0%;
+
+  width: 50vw;
+  height: 110vh;
+}
+.hero-text {
+  position: absolute;
+  top: 22%;
+  color: white;
+  z-index: 2;
+}
+.data::after {
+  content: "";
+  background: #2c4767;
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.dope {
+  z-index: 3;
+  position: absolute;
+  width: 70%;
+  height: 20%;
+  top: 72%;
+  left: 14%;
+
+  box-shadow: 13px 9px 38px -17px rgba(0, 0, 0, 0.71);
+}
+.dope a {
+  color: black;
+}
+#hero-btn {
+  color: white;
+}
+
+/* section-2 */
+
+.pho {
+  height: 8rem;
+}
+.pho img {
+  object-fit: contain;
+}
+
+/* section-3 */
+
+.section-3 {
+  height: 200vh;
+}
+.back-img {
+  height: 70vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.car-body {
+  border: 15px solid white;
+  object-fit: cover;
+  width: 40vw;
+  transform: translateY(-30%);
+  /* position: absolute;
+    top: 30%;
+    right: 10%; */
+}
+.car-text {
+  padding-top: 10rem;
+  /* background: #2C4767; */
+}
+
+/* section-4 */
+.section-4 {
+  mix-blend-mode: darken;
+}
+
+.car-body-a {
+  height: 100vh;
+  border: 15px solid white;
+  object-fit: cover;
+  width: 40vw;
+}
+.sec-4 h1 {
+  color: #2c4767;
+}
+/* .section-5 */
+/* .section-5 {
+  color: white;
+  height: 100vh;
+  background: gray;
+  background: url(img/section-5.jpg), #2c4767;
+  background-size: cover;
+  background-blend-mode: multiply;
+} */
+
+/* .section-6 */
+
+.section-6 {
+  background: url(img/buil.png);
+  background-size: cover;
+  background-position-y: -center;
+}
+.soc img {
+  height: 3rem;
+  width: 10rem;
+}
+/* footer */
+
+.logo1 {
+  height: 30vh;
+  object-fit: contain;
+  width: 25vw;
+}
+.logo1 img {
+  object-fit: contain;
+}
+
+/* meadia quary */
+
+/* 1500px */
+@media (min-width: 1500px) {
+  .section-3 {
+    height: 170vh;
+  }
+  h1 {
+    font-size: 4.3rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1500px) {
+  .section-3 {
+    height: 180vh;
+  }
+}
+/* 1100px */
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+  .dope {
+    display: none;
+  }
+}
+
+/* 1000px */
+@media (max-width: 1000px) {
+  .hero-text {
+    position: absolute;
+    top: 33%;
+    color: white;
+    z-index: 2;
+  }
+  .section-3 {
+    height: 150vh;
+  }
+  .logo {
+    height: 11vh;
+  }
+  .car-body {
+    object-fit: cover;
+    width: 43vw;
+  }
+}
+/* 750px */
+@media (max-width: 792px) {
+  .car-body {
+    object-fit: cover;
+    width: 80vw;
+  }
+  .car-body-a {
+    width: 50vw;
+  }
+  .soc img {
+    height: 3rem;
+    width: 7rem;
+  }
+  .car-text {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    /* background: #2C4767; */
+  }
+
+  .logo1 {
+    height: 50vh;
+
+    width: 55vw;
+  }
+  .section-3 {
+    height: 275vh;
+  }
+}
+
+/* 500px */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+  .section-3 {
+    height: 200vh;
+  }
+
+  .car-body {
+    width: 80vw;
+  }
+  .car-body-a {
+    width: 80vw;
+  }
+}
+
+/* section-5 */
+
+.sec-5 {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  /* background: yellow; */
+  position: relative;
+}
+.sec-5 ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.sec-5 ul li {
+  position: relative;
+  list-style: none;
+}
+.sec-5 ul li a {
+  position: relative;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 3.8em;
+  transition: 0.5s;
+  color: #ffff;
+}
+
+.sec-5 ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -7;
+  left: 0;
+  overflow: hidden;
+  color: black;
+
+  width: 0;
+  transition: 0.5s ease;
+}
+.sec-5 ul li a:hover::before,
+.sec-5 ul li.active a::before {
+  width: 100%;
+}
+.sec-5 #pica {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+  background: #2c4767;
+  filter: blur(1.5px);
+}
+.sec-5 #pica.one {
+  background: url(img/Franch.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sec-5 #pica.two {
+  background: url(img/china.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sec-5 #pica.three {
+  background: url(img/italy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sec-5 #pica.four {
+  background: url(img/rome.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.sec-5 #pica.five {
+  background: url(img/india.jpg);
+  background-size: cover;
+  background-position: center;
+}
